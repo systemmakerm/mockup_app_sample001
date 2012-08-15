@@ -1,0 +1,48 @@
+<header class="global-header">
+  <div class="nav-bar">
+    <p class="page-heading">ご利用料金</p>
+  </div>
+  
+  <div class="hlist-nav block">
+  <ul>
+  <li><a href="<%= url_for(:action => :index) %>">ホーム</a></li>
+    <li><a href="<%= url_for(:action => :today) %>">今日の感想</a></li>
+    <li><a href="<%= url_for(:action => :tomorrow) %>">明日のメニュー</a></li>
+    <li><a href="<%= url_for(:action => :advice) %>">アドバイス</a></li>
+    <li><a href="<%= url_for(:action => :price) %>" class="selected">料金ご案内</a></li>
+     <li><a href="<%= url_for(:action => :logout) %>">終了</a></li>
+
+  </ul>
+</div>
+
+  
+  
+  <h1>料金のご案内</h1>
+  <p>いつもご利用ありがとうございます。今月のご利用料金は、下記のとおりとなります。<br>今後ともよろしくお願いいたします。<br><br><br>
+  
+  本日までのご利用料金<br />（ｘｘ月ｘｘ日～ｘｘ月ｘｘ日）<br>
+  <span style="font-size: 20pt;"> 1,570円</span>　です。
+<br>
+確認されましたら、下記のログオフボタンを押してください。<br>
+  <a href="<%= url_for(:action => :logout) %>"><img src="/public/genki_rest/img/logoff.png" alt="ログオフする"><br><br>
+  
+  </p>
+
+
+<br />
+<br />
+
+</header>
+
+ 
+ <div class="hlist-nav block">
+  <ul>
+  <li><a href="<%= url_for(:action => :index) %>">ホーム</a></li>
+    <li><a href="<%= url_for(:action => :today) %>">今日の感想</a></li>
+    <li><a href="<%= url_for(:action => :tomorrow) %>">明日のメニュー</a></li>
+    <li><a href="<%= url_for(:action => :advice) %>">アドバイス</a></li>
+    <li><a href="<%= url_for(:action => :price) %>" class="selected">料金ご案内</a></li>
+     <li><a href="<%= url_for(:action => :logout) %>">終了</a></li>
+
+  </ul>
+</div>

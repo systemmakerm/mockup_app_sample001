@@ -1,0 +1,32 @@
+<header class="global-header">
+  <div class="nav-bar">
+    <p class="page-heading">元気食堂　ホーム</p>
+  </div>
+  <h1 class="logo">今日も、元気食堂へ　ようこそ！</h1>
+  <p>カードリーダーに<br />カードをかざしてください。</p>
+</header>
+
+<table>
+  <tr>
+    <td>
+      <img src="/public/genki_rest/img/a-meido.gif" height="200px" title="http://www.mihosozai.com/material1/maido/meido.htmlより取得したメイドさんのイラスト" class="event-banner image-frame" />
+    </td> 
+    <td valign="top">
+      <a href="#"><img src="/public/genki_rest/img/topix_1.gif" alt="" /></a><br />
+      <a href="<%= url_for(:action => :today) %>">
+        <img src="/public/genki_rest/img/topix_2.gif" alt="" />
+      </a><br />
+      <a href="#"><img src="/public/genki_rest/img/topix_3.gif" alt="" /></a><br />
+      <a href="#"><img src="/public/genki_rest/img/topix_4.gif" alt="" /></a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="<%= url_for(:action => :today) %>"><img src="/public/genki_rest/img/login_n.png" alt="login"></a>
+    </td>
+    <td></td>
+  </tr>
+</table>
+<div style="overflow-x: -webkit-marquee; background-color: blue;color: white;white-space: nowrap">
+  いつも食堂のご利用、ありがとうございます。本日もお仕事お疲れさまです。食堂でゆったりとした休み時間をお過ごしください
+</div>

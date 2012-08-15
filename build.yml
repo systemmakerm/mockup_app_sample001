@@ -1,0 +1,27 @@
+---
+sdk: /Users/nishima/.rvm/gems/ruby-1.9.3-p194@kyusu/gems/rhodes-3.3.3
+sdkversion: 3.1.0
+name: mockup app sample
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+wmsdk: Windows Mobile 6 Professional SDK (ARMV4I)
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.1
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.mockup_app_sample
+  BundleURLScheme: gennkirest
+wp:
+  productid: 923579e0-cb97-012e-9c7b-002197d15160
+symbian:
+  uid: '0xe436d965'
+android:
+  version: 2.3.3
+extensions:
+- json
+- another-extension

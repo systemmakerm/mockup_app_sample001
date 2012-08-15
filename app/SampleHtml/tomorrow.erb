@@ -1,0 +1,135 @@
+<script type="text/javascript"> 
+	$(document).ready( function(){ 
+
+	$(".cb-enable").click(function(){
+
+		var parent = $(this).parents('.switch');
+
+		$('.cb-enable',parent).removeClass('selected');
+
+		$(this).addClass('selected');
+
+		$('.checkbox',parent).attr('checked', true);
+
+	});
+
+});</script> 
+<header class="global-header">
+  <div class="nav-bar">
+    <p class="page-heading">元気食堂　明日のメニュー</p>
+   
+  </div>
+  
+  <div class="hlist-nav block">
+  <ul>
+ <li><a href="<%= url_for(:action => :index) %>">ホーム</a></li>
+    <li><a href="<%= url_for(:action => :today) %>">今日の感想</a></li>
+    <li><a href="<%= url_for(:action => :tomorrow) %>" class="selected">明日のメニュー</a></li>
+    <li><a href="<%= url_for(:action => :advice) %>">アドバイス</a></li>
+    <li><a href="<%= url_for(:action => :price) %>">料金ご案内</a></li>
+     <li><a href="<%= url_for(:action => :logout) %>">終了</a></li>
+
+  </ul>
+</div>
+  
+  <h1 class="logo">明日からの当食堂のメニューです</h1>
+  <p>食べたいものにチェックをお願いいたします。<br />腕によりをかけておいしいのをご用意いたします!!</p>
+</header>
+ <img src="/public/genki_rest/img/a-meido.gif" width="145" height="145" title="http://www.mihosozai.com/material1/maido/meido.htmlより取得したメイドさんのイラスト" />
+<hr />
+
+<table>
+<tr><td> <p>○月×日<br />
+    ■海老フライ<br />
+    <img src="/public/genki_rest/img/foods/fryed.png" alt="海老フライ" width="300px">
+<p>
+</td><td><!-- セレクト -->
+  <p class="field switch">
+    <input type="radio" id="radio1" name="field"  checked />
+    <input type="radio" id="radio2" name="field" />
+    <label for="radio1" class="cb-enable first"><span>食べたい</span></label>
+    <label for="radio2" class="cb-enable end"><span>食べたくない</span></label>
+</p>
+<!-- / セレクト -->
+</td></tr>
+<tr><td> <p>○月×日<br />
+
+<img src="/public/genki_rest/img/foods/fish.png" alt="焼き魚" width="300px">
+</td><td><!-- セレクト -->
+  <p class="field switch">
+    <input type="radio" id="radio1" name="field"  checked />
+    <input type="radio" id="radio2" name="field" />
+    <label for="radio1" class="cb-enable first"><span>食べたい</span></label>
+    <label for="radio2" class="cb-enable end"><span>食べたくない</span></label>
+<!-- / セレクト -->
+</td></tr>
+<tr><td> <p>○月×日<br />
+
+<img src="/public/genki_rest/img/foods/omurice.png" alt="オムライス" width="300px">
+</td><td><!-- セレクト -->
+  <p class="field switch">
+    <input type="radio" id="radio1" name="field"  checked />
+    <input type="radio" id="radio2" name="field" />
+    <label for="radio1" class="cb-enable first"><span>食べたい</span></label>
+    <label for="radio2" class="cb-enable end"><span>食べたくない</span></label>
+
+<!-- / セレクト -->
+</td></tr>
+<tr><td> <p>○月×日<br />
+
+<img src="/public/genki_rest/img/foods/rahmen.png" alt="ラーメン" width="300px">
+</td><td><!-- セレクト -->
+  <p class="field switch">
+    <input type="radio" id="radio1" name="field"  checked />
+    <input type="radio" id="radio2" name="field" />
+    <label for="radio1" class="cb-enable first"><span>食べたい</span></label>
+    <label for="radio2" class="cb-enable end"><span>食べたくない</span></label>
+<!-- / セレクト -->
+</td></tr>
+<tr><td> <p>○月×日<br />
+
+<img src="/public/genki_rest/img/foods/curry.png" alt="カレーライス" width="300px">
+</td><td><!-- セレクト -->
+  <p class="field switch">
+    <input type="radio" id="radio1" name="field"  checked />
+    <input type="radio" id="radio2" name="field" />
+    <label for="radio1" class="cb-enable first"><span>食べたい</span></label>
+    <label for="radio2" class="cb-enable end"><span>食べたくない</span></label>
+<!-- / セレクト -->
+</td></tr>
+<tr><td> <p>○月×日<br />
+
+<img src="/public/genki_rest/img/foods/yakisoba.jpeg" alt="焼きそば" width="300px">
+</td><td><!-- セレクト -->
+  <p class="field switch">
+    <input type="radio" id="radio1" name="field"  checked />
+    <input type="radio" id="radio2" name="field" />
+    <label for="radio1" class="cb-enable first"><span>食べたい</span></label>
+    <label for="radio2" class="cb-enable end"><span>食べたくない</span></label>
+<!-- / セレクト -->
+</td></tr>
+</table>
+
+
+
+
+
+<p>アンケートにご協力いただき、まことにありがとうございました。よりより献立づくりに役立てさせていただきます。</p>
+<a href="<%= url_for(:action => :advice) %>"><img src="/public/genki_rest/img/ok.png" alt="ok"></a><br><br>
+
+
+  </p>
+  
+  
+<div class="hlist-nav block">
+  <ul>
+ <li><a href="<%= url_for(:action => :index) %>">ホーム</a></li>
+    <li><a href="<%= url_for(:action => :today) %>">今日の感想</a></li>
+    <li><a href="<%= url_for(:action => :tomorrow) %>" class="selected">明日のメニュー</a></li>
+    <li><a href="<%= url_for(:action => :advice) %>">アドバイス</a></li>
+    <li><a href="<%= url_for(:action => :price) %>">料金ご案内</a></li>
+     <li><a href="<%= url_for(:action => :logout) %>">終了</a></li>
+
+  </ul>
+  </ul>
+</div>

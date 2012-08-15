@@ -1,0 +1,44 @@
+<header class="global-header">
+  <div class="nav-bar">
+    <p class="page-heading">アドバイス</p>
+   
+  </div>
+  
+  <div class="hlist-nav block">
+  <ul>
+   <li><a href="<%= url_for(:action => :index) %>">ホーム</a></li>
+    <li><a href="<%= url_for(:action => :today) %>">今日の感想</a></li>
+    <li><a href="<%= url_for(:action => :tomorrow) %>">明日のメニュー</a></li>
+    <li><a href="<%= url_for(:action => :advice) %>" class="selected">アドバイス</a></li>
+    <li><a href="<%= url_for(:action => :price) %>">料金ご案内</a></li>
+     <li><a href="<%= url_for(:action => :logout) %>">終了</a></li>
+  </ul>
+</div>
+
+  
+  
+  <h1>元気食堂から、あなたへのアドバイスです</h1>
+  <p>あなたのことが心配だから。<br />身体に気をつけてくださいね!!</p>
+</header>
+  <img src="/public/genki_rest/img/a-meido.gif" width="145" height="145" title="http://www.mihosozai.com/material1/maido/meido.htmlより取得したメイドさんのイラスト" />
+    <p>お肉がお好きなんですか？　今週はお昼にずっとお肉料理を食べておられますね。<br>お昼のことしかわかりませんが、ひょっとしてカロリーオーバーなんかしてませんか？<br>ちょっと心配です。明日は野菜をたくさん食べてみませんか？</p>
+オススメは
+    ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
+<table>
+  <tr><td>野菜炒め<br />
+  <img src="/public/genki_rest/img/foods/yasai.jpeg" alt="野菜炒め">
+  </td></tr>
+</table>
+  <a href="<%= url_for(:action => :price) %>"><img src="/public/genki_rest/img/ok.png" alt="ok"></a><br><br>
+ <div class="hlist-nav block">
+  <ul>
+  <li><a href="<%= url_for(:action => :index) %>">ホーム</a></li>
+    <li><a href="<%= url_for(:action => :today) %>">今日の感想</a></li>
+    <li><a href="<%= url_for(:action => :tomorrow) %>">明日のメニュー</a></li>
+    <li><a href="<%= url_for(:action => :advice) %>" class="selected">アドバイス</a></li>
+    <li><a href="<%= url_for(:action => :price) %>">料金ご案内</a></li>
+     <li><a href="<%= url_for(:action => :logout) %>">終了</a></li>
+
+ 
+  </ul>
+</div>
